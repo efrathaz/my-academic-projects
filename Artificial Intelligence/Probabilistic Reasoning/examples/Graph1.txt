@@ -1,0 +1,11 @@
+#N 4    ; number of vertices n in graph (from 1 to n)
+
+#V 1 0.4  ; Vertex 1, probability of resource 0.4
+#V 2 0.2  ; Vertex 2, probability of resource 0.2
+
+#E 1 2 W1 ; Edge between vertices 1 and 2, weight 1
+#E 2 3 W3 ; Edge between vertices 2 and 3, weight 3
+#E 2 4 W4 ; Edge between vertices 2 and 4, weight 4
+#E 3 4 W3 ; Edge between vertices 3 and 4, weight 3
+
+#Goal V3  ; To be used in optional bonus, if applicable

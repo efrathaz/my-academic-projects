@@ -1,0 +1,420 @@
+Please choose pt:
+> 0.9
+Please choose pd:
+> 0.7
+Please choose leakage:
+> 0.1
+VERTEX 1: resource
+	P(resource) = 0.4
+	P(no resource) = 0.6
+
+VERTEX 1: terrorist | resources at 1, resources at 2
+	P(terr | not res 1, not res 2) = 0.1
+	P(no terr | not res 1, not res 2) = 0.9
+
+	P(terr | res 1, not res 2) = 0.72
+	P(no terr | res 1, not res 2) = 0.28
+
+	P(terr | not res 1, res 2) = 0.54
+	P(no terr | not res 1, res 2) = 0.46
+
+	P(terr | res 1, res 2) = 0.871
+	P(no terr | res 1, res 2) = 0.129
+
+VERTEX 1: destruction | terrorist at 1, terrorist at 2
+	P(dest | not terr 1, not terr 2) = 0.0
+	P(no dest | not terr 1, not terr 2) = 1.0
+
+	P(dest | terr 1, not terr 2) = 0.56
+	P(no dest | terr 1, not terr 2) = 0.44
+
+	P(dest | not terr 1, terr 2) = 0.42
+	P(no dest | not terr 1, terr 2) = 0.58
+
+	P(dest | terr 1, terr 2) = 0.745
+	P(no dest | terr 1, terr 2) = 0.255
+
+VERTEX 2: resource
+	P(resource) = 0.2
+	P(no resource) = 0.8
+
+VERTEX 2: terrorist | resources at 1, resources at 2, resources at 3, resources at 4
+	P(terr | not res 1, not res 2, not res 3, not res 4) = 0.1
+	P(no terr | not res 1, not res 2, not res 3, not res 4) = 0.9
+
+	P(terr | res 1, not res 2, not res 3, not res 4) = 0.54
+	P(no terr | res 1, not res 2, not res 3, not res 4) = 0.46
+
+	P(terr | not res 1, res 2, not res 3, not res 4) = 0.72
+	P(no terr | not res 1, res 2, not res 3, not res 4) = 0.28
+
+	P(terr | res 1, res 2, not res 3, not res 4) = 0.871
+	P(no terr | res 1, res 2, not res 3, not res 4) = 0.129
+
+	P(terr | not res 1, not res 2, res 3, not res 4) = 0.18
+	P(no terr | not res 1, not res 2, res 3, not res 4) = 0.82
+
+	P(terr | res 1, not res 2, res 3, not res 4) = 0.623
+	P(no terr | res 1, not res 2, res 3, not res 4) = 0.377
+
+	P(terr | not res 1, res 2, res 3, not res 4) = 0.77
+	P(no terr | not res 1, res 2, res 3, not res 4) = 0.23
+
+	P(terr | res 1, res 2, res 3, not res 4) = 0.894
+	P(no terr | res 1, res 2, res 3, not res 4) = 0.106
+
+	P(terr | not res 1, not res 2, not res 3, res 4) = 0.0
+	P(no terr | not res 1, not res 2, not res 3, res 4) = 1.0
+
+	P(terr | res 1, not res 2, not res 3, res 4) = 0.54
+	P(no terr | res 1, not res 2, not res 3, res 4) = 0.46
+
+	P(terr | not res 1, res 2, not res 3, res 4) = 0.72
+	P(no terr | not res 1, res 2, not res 3, res 4) = 0.28
+
+	P(terr | res 1, res 2, not res 3, res 4) = 0.871
+	P(no terr | res 1, res 2, not res 3, res 4) = 0.129
+
+	P(terr | not res 1, not res 2, res 3, res 4) = 0.18
+	P(no terr | not res 1, not res 2, res 3, res 4) = 0.82
+
+	P(terr | res 1, not res 2, res 3, res 4) = 0.623
+	P(no terr | res 1, not res 2, res 3, res 4) = 0.377
+
+	P(terr | not res 1, res 2, res 3, res 4) = 0.77
+	P(no terr | not res 1, res 2, res 3, res 4) = 0.23
+
+	P(terr | res 1, res 2, res 3, res 4) = 0.894
+	P(no terr | res 1, res 2, res 3, res 4) = 0.106
+
+VERTEX 2: destruction | terrorist at 1, terrorist at 2, terrorist at 3, terrorist at 4
+	P(dest | not terr 1, not terr 2, not terr 3, not terr 4) = 0.0
+	P(no dest | not terr 1, not terr 2, not terr 3, not terr 4) = 1.0
+
+	P(dest | terr 1, not terr 2, not terr 3, not terr 4) = 0.42
+	P(no dest | terr 1, not terr 2, not terr 3, not terr 4) = 0.58
+
+	P(dest | not terr 1, terr 2, not terr 3, not terr 4) = 0.56
+	P(no dest | not terr 1, terr 2, not terr 3, not terr 4) = 0.44
+
+	P(dest | terr 1, terr 2, not terr 3, not terr 4) = 0.745
+	P(no dest | terr 1, terr 2, not terr 3, not terr 4) = 0.255
+
+	P(dest | not terr 1, not terr 2, terr 3, not terr 4) = 0.14
+	P(no dest | not terr 1, not terr 2, terr 3, not terr 4) = 0.86
+
+	P(dest | terr 1, not terr 2, terr 3, not terr 4) = 0.501
+	P(no dest | terr 1, not terr 2, terr 3, not terr 4) = 0.499
+
+	P(dest | not terr 1, terr 2, terr 3, not terr 4) = 0.622
+	P(no dest | not terr 1, terr 2, terr 3, not terr 4) = 0.378
+
+	P(dest | terr 1, terr 2, terr 3, not terr 4) = 0.781
+	P(no dest | terr 1, terr 2, terr 3, not terr 4) = 0.219
+
+	P(dest | not terr 1, not terr 2, not terr 3, terr 4) = 0.0
+	P(no dest | not terr 1, not terr 2, not terr 3, terr 4) = 1.0
+
+	P(dest | terr 1, not terr 2, not terr 3, terr 4) = 0.42
+	P(no dest | terr 1, not terr 2, not terr 3, terr 4) = 0.58
+
+	P(dest | not terr 1, terr 2, not terr 3, terr 4) = 0.56
+	P(no dest | not terr 1, terr 2, not terr 3, terr 4) = 0.44
+
+	P(dest | terr 1, terr 2, not terr 3, terr 4) = 0.745
+	P(no dest | terr 1, terr 2, not terr 3, terr 4) = 0.255
+
+	P(dest | not terr 1, not terr 2, terr 3, terr 4) = 0.14
+	P(no dest | not terr 1, not terr 2, terr 3, terr 4) = 0.86
+
+	P(dest | terr 1, not terr 2, terr 3, terr 4) = 0.501
+	P(no dest | terr 1, not terr 2, terr 3, terr 4) = 0.499
+
+	P(dest | not terr 1, terr 2, terr 3, terr 4) = 0.622
+	P(no dest | not terr 1, terr 2, terr 3, terr 4) = 0.378
+
+	P(dest | terr 1, terr 2, terr 3, terr 4) = 0.781
+	P(no dest | terr 1, terr 2, terr 3, terr 4) = 0.219
+
+VERTEX 3: resource
+	P(resource) = 0.0
+	P(no resource) = 1.0
+
+VERTEX 3: terrorist | resources at 2, resources at 3, resources at 4
+	P(terr | not res 2, not res 3, not res 4) = 0.1
+	P(no terr | not res 2, not res 3, not res 4) = 0.9
+
+	P(terr | res 2, not res 3, not res 4) = 0.18
+	P(no terr | res 2, not res 3, not res 4) = 0.82
+
+	P(terr | not res 2, res 3, not res 4) = 0.72
+	P(no terr | not res 2, res 3, not res 4) = 0.28
+
+	P(terr | res 2, res 3, not res 4) = 0.77
+	P(no terr | res 2, res 3, not res 4) = 0.23
+
+	P(terr | not res 2, not res 3, res 4) = 0.18
+	P(no terr | not res 2, not res 3, res 4) = 0.82
+
+	P(terr | res 2, not res 3, res 4) = 0.328
+	P(no terr | res 2, not res 3, res 4) = 0.672
+
+	P(terr | not res 2, res 3, res 4) = 0.77
+	P(no terr | not res 2, res 3, res 4) = 0.23
+
+	P(terr | res 2, res 3, res 4) = 0.812
+	P(no terr | res 2, res 3, res 4) = 0.188
+
+VERTEX 3: destruction | terrorist at 2, terrorist at 3, terrorist at 4
+	P(dest | not terr 2, not terr 3, not terr 4) = 0.0
+	P(no dest | not terr 2, not terr 3, not terr 4) = 1.0
+
+	P(dest | terr 2, not terr 3, not terr 4) = 0.14
+	P(no dest | terr 2, not terr 3, not terr 4) = 0.86
+
+	P(dest | not terr 2, terr 3, not terr 4) = 0.56
+	P(no dest | not terr 2, terr 3, not terr 4) = 0.44
+
+	P(dest | terr 2, terr 3, not terr 4) = 0.622
+	P(no dest | terr 2, terr 3, not terr 4) = 0.378
+
+	P(dest | not terr 2, not terr 3, terr 4) = 0.14
+	P(no dest | not terr 2, not terr 3, terr 4) = 0.86
+
+	P(dest | terr 2, not terr 3, terr 4) = 0.26
+	P(no dest | terr 2, not terr 3, terr 4) = 0.74
+
+	P(dest | not terr 2, terr 3, terr 4) = 0.622
+	P(no dest | not terr 2, terr 3, terr 4) = 0.378
+
+	P(dest | terr 2, terr 3, terr 4) = 0.675
+	P(no dest | terr 2, terr 3, terr 4) = 0.325
+
+VERTEX 4: resource
+	P(resource) = 0.0
+	P(no resource) = 1.0
+
+VERTEX 4: terrorist | resources at 2, resources at 3, resources at 4
+	P(terr | not res 2, not res 3, not res 4) = 0.1
+	P(no terr | not res 2, not res 3, not res 4) = 0.9
+
+	P(terr | res 2, not res 3, not res 4) = 0.0
+	P(no terr | res 2, not res 3, not res 4) = 1.0
+
+	P(terr | not res 2, res 3, not res 4) = 0.18
+	P(no terr | not res 2, res 3, not res 4) = 0.82
+
+	P(terr | res 2, res 3, not res 4) = 0.18
+	P(no terr | res 2, res 3, not res 4) = 0.82
+
+	P(terr | not res 2, not res 3, res 4) = 0.72
+	P(no terr | not res 2, not res 3, res 4) = 0.28
+
+	P(terr | res 2, not res 3, res 4) = 0.72
+	P(no terr | res 2, not res 3, res 4) = 0.28
+
+	P(terr | not res 2, res 3, res 4) = 0.77
+	P(no terr | not res 2, res 3, res 4) = 0.23
+
+	P(terr | res 2, res 3, res 4) = 0.77
+	P(no terr | res 2, res 3, res 4) = 0.23
+
+VERTEX 4: destruction | terrorist at 2, terrorist at 3, terrorist at 4
+	P(dest | not terr 2, not terr 3, not terr 4) = 0.0
+	P(no dest | not terr 2, not terr 3, not terr 4) = 1.0
+
+	P(dest | terr 2, not terr 3, not terr 4) = 0.0
+	P(no dest | terr 2, not terr 3, not terr 4) = 1.0
+
+	P(dest | not terr 2, terr 3, not terr 4) = 0.14
+	P(no dest | not terr 2, terr 3, not terr 4) = 0.86
+
+	P(dest | terr 2, terr 3, not terr 4) = 0.14
+	P(no dest | terr 2, terr 3, not terr 4) = 0.86
+
+	P(dest | not terr 2, not terr 3, terr 4) = 0.56
+	P(no dest | not terr 2, not terr 3, terr 4) = 0.44
+
+	P(dest | terr 2, not terr 3, terr 4) = 0.56
+	P(no dest | terr 2, not terr 3, terr 4) = 0.44
+
+	P(dest | not terr 2, terr 3, terr 4) = 0.622
+	P(no dest | not terr 2, terr 3, terr 4) = 0.378
+
+	P(dest | terr 2, terr 3, terr 4) = 0.622
+	P(no dest | terr 2, terr 3, terr 4) = 0.378
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 1
+P(not t1) = 0.587, P(t1) = 0.413
+P(not t2) = 0.623, P(t2) = 0.377
+P(not t3) = 0.884, P(t3) = 0.116
+P(not t4) = 0.92, P(t4) = 0.08
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 2
+Please insert an evidence in the following form: <r/t/d><nodeId> = <0/1>
+> r1 = 0
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 1
+P(not t1) = 0.812, P(t1) = 0.188
+P(not t2) = 0.776, P(t2) = 0.224
+P(not t3) = 0.884, P(t3) = 0.116
+P(not t4) = 0.92, P(t4) = 0.08
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 2
+Please choose path length: 3
+Please choose a path: 1 2 4
+The probability of no terrorists in this path is 0.609
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 2
+Please choose path length: 4
+Please choose a path: 1 2 3 4
+The probability of no terrorists in this path is 0.546
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 3
+Please choose source node: 1
+Please choose goal node: 4
+The path with the highest probability of being free from terrorists is:
+1 2 4 (probability = 0.609)
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 1
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 3
+Please choose source node: 1
+Please choose goal node: 4
+The path with the highest probability of being free from terrorists is:
+1 2 4 (probability = 0.404)
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 1
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 2
+Please insert an evidence in the following form: <r/t/d><nodeId> = <0/1>
+> d2 = 1
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 1
+P(not t1) = 0.254, P(t1) = 0.746
+P(not t2) = 0.242, P(t2) = 0.758
+P(not t3) = 0.845, P(t3) = 0.155
+P(not t4) = 0.936, P(t4) = 0.064
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 3
+Please choose a question:
+1. What is the probability that each of the vertices contains terrorists?
+2. What is the probability that a certain path (set of edges) is free from terrorists?
+3. What is the path from a given location to a goal that has the highest probability of being free from terrorists?
+> 3
+Please choose source node: 1
+Please choose goal node: 4
+The path with the highest probability of being free from terrorists is:
+1 2 4 (probability = 0.017)
+
+Please choose an option:
+1. Reset evidences
+2. Add new evidence
+3. Do probablistic reasoning
+4. Print evidences
+5. Quit
+> 5

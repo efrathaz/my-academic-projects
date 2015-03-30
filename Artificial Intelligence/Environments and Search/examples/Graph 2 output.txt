@@ -1,0 +1,24 @@
+Graph2:
+start = 1, goal = 3
+
+---Greedy Heuristic---
+Actions: (1-->2), (2-->3)
+f = 1 : score = 37, performance = 40
+f = 100: score = 37, performance = 3703
+f = 10000: score = 37, performance = 370003
+
+----------A*----------
+Actions: NO-OP, NO-OP, (1-->4), (4-->3)
+f = 1 : score = 23, performance = 56
+f = 100: score = 23, performance = 2333
+f = 10000: score = 23, performance = 230033
+
+
+---------RTA*---------
+f = 1:
+MaxExpansions = 1-5, score = infinity, performance = infinity
+MaxExpansions = 6, score = 23, performance = 42
+	Actions: NO-OP, NO-OP, (1-->4), (4-->3)
+MaxExpansions = 7-8, score = infinity, performance = infinity
+MaxExpansions = 9, score = 24, performance = 45
+	Actions: NO-OP, (1-->4), NO-OP, (4-->3)

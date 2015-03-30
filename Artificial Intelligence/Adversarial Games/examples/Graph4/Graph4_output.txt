@@ -1,0 +1,32 @@
+;;;; PART 1 ;;;;
+
+First player = Yazidi 1->4
+Second player = ISIS: 2
+
+Scores:
+	Agent 0: S = infinity, Number of actions: 3
+		Actions: NO-OP, NO-OP, NO-OP
+	Agent 1: S = -infinity, Number of actions: 3
+		Actions: NO-OP, NO-OP, NO-OP
+		
+;;;; PART 2 ;;;;
+
+First player = 1->4
+Second player = 2->3
+
+Scores:
+	Agent 0: S = 3, Number of actions: 2
+		Actions: (1-->3), (3-->4)
+	Agent 1: S = 3, Number of actions: 3
+		Actions: NO-OP, NO-OP, (2-->3)
+		
+;;;; PART 3 ;;;;
+
+First player = 1->4
+Second player = 2->3
+
+Scores:
+	Agent 0: S = 3, Number of actions: 2
+		Actions: (1-->3), (3-->4)
+	Agent 1: S = 3, Number of actions: 3
+		Actions: NO-OP, NO-OP, (2-->3)

@@ -1,0 +1,24 @@
+Graph1:
+start = 1, goal = 5
+
+---Greedy Heuristic---
+Actions: (1-->6), (6-->5)
+f = 1 : score = 73, performance = 76
+f = 100: score = 73, performance = 7303
+f = 10000: score = 73, performance = 730003
+
+----------A*----------
+Actions: NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, (1-->2), NO-OP, NO-OP, (2-->4), (4-->5)
+f = 1 : score = 20, performance = 131
+f = 100: score = 20, performance = 2111
+f = 10000: score = 20, performance = 200111
+
+
+---------RTA*---------
+f = 1:
+MaxExpansions = 1-4, score = infinity, performance = infinity
+	Actions: NO-OP x 11
+MaxExpansions = 5, score = 20, performance = 70
+	Actions: NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, (1-->2), NO-OP, (2-->4), (4-->5)
+MaxExpansions = 6, score = 23, performance = 82
+	Actions: NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, NO-OP, (1-->2), NO-OP, (2-->4), (4-->5)

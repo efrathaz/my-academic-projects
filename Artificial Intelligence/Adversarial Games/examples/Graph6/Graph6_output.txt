@@ -1,0 +1,45 @@
+;;;; PART 1 ;;;;
+
+First player = Yazidi 3->6
+Second player = ISIS: 1
+
+Scores:
+	Agent 0: S = 6, Number of actions: 3
+		Actions: (3-->4), (4-->5), (5-->6)
+	Agent 1: S = -6, Number of actions: 3
+		Actions: NO-OP, NO-OP, NO-OP
+		
+First player = Yazidi 3->6
+Second player = ISIS: 4
+Cutoff = up to 30
+
+Scores:
+	Agent 0: S = infinity, Number of actions: 4
+		Actions: NO-OP, NO-OP, NO-OP, NO-OP
+	Agent 1: S = -infinity, Number of actions: 4
+		Actions: NO-OP, NO-OP, NO-OP, NO-OP
+		
+;;;; PART 2 ;;;;
+
+First player = 1->6
+Second player = 3->6
+
+Scores:
+	Agent 0: S = 16, Number of actions: 6
+		Actions: NO-OP, (1-->2), (2-->3), (3-->4), (4-->5), (5-->6)
+	Agent 1: S = 6, Number of actions: 3
+		Actions: (3-->4), (4-->5), (5-->6)
+		
+;;;; PART 3 ;;;;
+
+First player = 1->6
+Second player = 3->6
+
+Scores:
+	Agent 0: S = 16, Number of actions: 6
+		Actions: NO-OP, (1-->2), (2-->3), (3-->4), (4-->5), (5-->6)
+	Agent 1: S = 6, Number of actions: 3
+		Actions: (3-->4), (4-->5), (5-->6)
+		
+		
+		
